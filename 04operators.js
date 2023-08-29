@@ -91,5 +91,3 @@ function greet(name) {
   console.log("Hello, " + name);
 }
 greet("Alice"); // "Hello, Alice"
-
-let result = null ?? "default"; // "default"

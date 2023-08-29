@@ -10,7 +10,7 @@ console.log(name.length);
 name = "Ankit Singh";
 
 // takes indexing from 0
-console.log(name.slice(5, 7));
+console.log(name.slice(0, 5));
 
 // substring is same as slicing
 
@@ -30,26 +30,25 @@ let text3 = "Hello World!"; // String
 let text4 = text1.toLowerCase();
 console.log(text4);
 
-
 let text = "Text1" + " " + "Text2";
-text = "Text1".concat(" ","Text2");
-console.log(text)
-
+text = "Text1".concat(" ", "Text2");
+console.log(text);
 
 let numb = 5;
 let text_1 = numb.toString();
-console.log(text_1)
+console.log(text_1);
 
 let location = "Please locate where 'locate' occurs!";
 console.log(location.search("locate"));
-console.log(location.indexOf("Please"))
-
+console.log(location.indexOf("Please"));
 
 // string templates
-console.log(`${location}`+" Ankit" + "Singh")
+console.log(`${location}` + " Ankit" + "Singh");
 
+const A = 100;
 
+console.log(`${A}`);
 
-const A = 100
-
-console.log(`${A}`)
+const originalString = "Hello, world! Hello, world!";
+const newString = originalString.replaceAll("world", "Universe");
+console.log(newString); // "Hello, Universe! Hello, Universe!"
