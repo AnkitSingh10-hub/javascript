@@ -6,3 +6,4 @@ console.log(obj.property2)
 
 
 myFunction()
+
