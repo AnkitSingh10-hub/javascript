@@ -4,7 +4,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1', {
         'Content-Type': 'application/json', // Optional headers
         // Add any other headers as needed
     },
-})
+}) 
     .then(response => response.json())
     .then(data => {
         console.log(data); // Process the response data

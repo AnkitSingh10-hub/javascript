@@ -8,11 +8,17 @@ jsonString = '{"name":"Bob","age":32}';
 person = JSON.parse(jsonString);
 console.log(person); // Output: { name: 'Bob', age: 32 }
 
-
+console.log("----------------------")
 //converting response data from fetch api to javascript object
 fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
+    .then(response => {
+        console.log(response)
+
+
+        return response.json()
+    })
     .then(data => {
+
         console.log(data); // Parsed JSON data
     })
     .catch(error => {
