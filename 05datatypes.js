@@ -36,4 +36,4 @@ function add(a, b) {
 let uniqueKey = Symbol("unique");
 
 //BigInt
-let bigNumber = 1234567890123456789012345678901234567890n;
+let bigNumber = 1234567890123456789012345678901234567890;
