@@ -12,6 +12,6 @@ console.log(evenNumbers); // Output: [2, 4]
 const animals = ["lion", "tiger", "elephant", "giraffe", "zebra"];
 
 // Using filter to create a new array of animals with names longer than 5 characters
-const longNamedAnimals = animals.filter(animal => animal.length > 5);
+const longNamedAnimals = animals.filter((animal) => animal.length > 5);
 
 console.log(longNamedAnimals); // Output: ["elephant", "giraffe"]
