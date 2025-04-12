@@ -1,16 +1,21 @@
-var number = 3
+function asyncTask() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const success = true;
+            if (success) {
+                resolve("Task completed!");
+            } else {
+                reject("Task failed.");
+            }
+        }, 2000);
+    });
+}
 
-
-const promise = new Promise((resolve, reject) => {
-
-    if (number === 2) {
-        resolve("The number is equal to two")
-    }
-    else {
-        reject("The number is not equal to two")
-    }
-
-})
-
-promise.then(data => console.log(`The .then is run - ${data}`)).catch(data => console.log(`The .catch is run - ${data}`))
-
+// Using the Promise
+asyncTask()
+    .then(result => {
+        console.log(result); // "Task completed!"
+    })
+    .catch(error => {
+        console.error(error); // if it failed
+    });
