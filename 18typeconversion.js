@@ -47,7 +47,7 @@ console.log(charArray);
 var obj = { name: "Alice", age: 30 };
 var strObj = JSON.stringify(obj); // converted into JSON string
 console.log(strObj);
-var parsedObj = JSON.parse(strObj);
+var parsedObj = JSON.parse(strObj); //converted back to object
 console.log(parsedObj);
 
 const sentence = "This is a sample sentence.";
