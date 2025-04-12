@@ -1,3 +1,14 @@
+
+// Traditional function expression
+const multiply = function (x, y) {
+    return x * y;
+};
+
+// Arrow function equivalent
+const multiplyArrow = (x, y) => x * y;
+
+console.log(multiplyArrow(5, 5))
+
 // Basic syntax
 const functionName = (parameters) => {
     console.log(`This is 1st function call with parameter ${parameters}`)
@@ -19,13 +30,3 @@ const sum = add(50, 50)
 
 console.log(sum)
 
-
-// Traditional function expression
-const multiply = function (x, y) {
-    return x * y;
-};
-
-// Arrow function equivalent
-const multiplyArrow = (x, y) => x * y;
-
-console.log(multiplyArrow(5, 5))
