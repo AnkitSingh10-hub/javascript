@@ -45,7 +45,7 @@ console.log(charArray);
 
 //Object Conversion:
 var obj = { name: "Alice", age: 30 };
-var strObj = JSON.stringify(obj);
+var strObj = JSON.stringify(obj); // converted into JSON string
 console.log(strObj);
 var parsedObj = JSON.parse(strObj);
 console.log(parsedObj);
